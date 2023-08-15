@@ -37,6 +37,13 @@ a {
     text-decoration: none;
 }
 
+h2{
+    font-size: 3rem;
+    color: var(--verde-oscuro);
+    font-family: var(--fuente-titulo);
+    text-align: center;
+}
+
 /*Navegacion*/
 .navegacion {
     display: flex;
@@ -109,4 +116,18 @@ a {
 .titulo {
     font-family: var(--fuente-especial);
     text-align: center;
+    font-size: 4rem;
+    color: var(--verde-claro);
 }
+
+/*Histotia*/
+.historia__imagen{
+    max-width: 100%;
+    padding: 0 2rem;
+}
+
+.historia__texto{
+    padding: 0 2rem;
+    
+}
+
