@@ -1,0 +1,112 @@
+:root {
+    --fuente-logo: 'Lilita One', cursive;
+    --fuente-especial: 'Oswald', sans-serif;
+    --fuente-titulo: 'Handlee', cursive;
+
+    --color-blanco: #fff;
+    --verde-claro: #2a8126;
+    --verde-oscuro: #103920;
+}
+
+/*Globales*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+header {
+    background-image: url(../IMG/13840094_5372179.jpg);
+    height: 63.5rem;
+    background-size: cover;
+    background-position: center center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Navegacion*/
+.navegacion {
+    display: flex;
+    background-color: rgb(0, 0, 0, 60%);
+    flex-direction: column;
+    align-items: center;
+}
+
+.navegacion__enlace {
+    text-decoration: none;
+    font-family: var(--fuente-titulo);
+    font-size: 1.8rem;
+    color: var(--color-blanco);
+    padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .navegacion__enlace {
+        padding: 2rem;
+        font-size: 2rem;
+    }
+}
+
+.navegacion__enlace:hover {
+    color: #4ddc46;
+}
+
+/*Logo*/
+.logo {
+    font-size: 7rem;
+    text-align: center;
+    margin: 0;
+    padding-top: 1rem;
+    font-weight: bold;
+    font-family: var(--fuente-logo);
+    color: var(--color-blanco);
+}
+
+.frase-logo {
+    text-align: center;
+    color: var(--color-blanco);
+    margin: 0;
+    font-family: var(--fuente-titulo);
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        padding-top: 5rem;
+        font-size: 10.5rem;
+    }
+
+    .frase-logo {
+        font-size: 2rem;
+    }
+}
+
+/*Contenedor*/
+.contenedor {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+/*Titulo*/
+.titulo {
+    font-family: var(--fuente-especial);
+    text-align: center;
+}
