@@ -6,6 +6,9 @@
     --color-blanco: #fff;
     --verde-claro: #2a8126;
     --verde-oscuro: #103920;
+    --color-crema: #e1d4d4;
+    --color-crema2: #e1d8d8;
+    --color-negro: #000;
 }
 
 /*Globales*/
@@ -131,3 +134,43 @@ h2{
     
 }
 
+/*Caracteristicas*/
+.caracteristicas{
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 6rem;
+}
+
+.caracteristicas__elemento{
+    position: relative;
+    margin: 0 auto;
+    height: 10rem;
+    width: 15rem;
+    background-color: var(--color-crema);
+    border: solid var(--color-negro);
+}
+
+.caracteristicas__elemento__icono{
+    height: 5rem;
+    width: 6rem;
+    background-color: var(--color-crema2);
+    border: solid var(--color-negro);
+    position: absolute;
+    top: -30%;
+    left: 30%;
+}
+
+.caracteristicas__titulo{
+    text-align: center;
+    margin: 0;
+    padding-top: 2.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.caracteristicas__texto{
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+}
